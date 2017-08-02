@@ -1,0 +1,14 @@
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\bin\Debug\CapGeminiTechTest.exe.config
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\bin\Debug\CapGeminiTechTest.exe
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\bin\Debug\CapGeminiTechTest.pdb
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest.csprojResolveAssemblyReference.cache
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\MainWindow.g.cs
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\App.g.cs
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest_MarkupCompile.cache
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest_MarkupCompile.lref
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\MainWindow.baml
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest.g.resources
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest.Properties.Resources.resources
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest.csproj.GenerateResource.Cache
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest.exe
+C:\Users\steph\AppData\Local\Temporary Projects\CapGeminiTechTest\obj\Debug\CapGeminiTechTest.pdb
