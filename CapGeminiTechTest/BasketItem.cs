@@ -8,15 +8,13 @@ namespace CapGeminiTechTest
 {
     class BasketItem
     {
-        public string ItemName { get; private set; }
+        public string ItemName { get; set; }
         public double ItemPrice { get; set; }
-        public string Description { get; private set; }
 
         public BasketItem(string itemName)
         {
             this.ItemName = itemName;
             this.ItemPrice = GetDefaultPrice();
-            this.Description = this.ItemName;
         }
 
         private double GetDefaultPrice()
@@ -35,6 +33,14 @@ namespace CapGeminiTechTest
             }
 
             return price;
+        }
+
+        public string Description
+        {
+            get
+            {
+                return string.Format("{0}  ({1})", this.ItemName, this.ItemPrice.ToString("F"));
+            }
         }
     }
 }

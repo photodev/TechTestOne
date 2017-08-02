@@ -39,7 +39,11 @@ namespace CapGeminiTechTest
             try
             {
                 // Scan the item
-                ScanItem(cboShopping.Text);
+                BasketItem item = ScanItem(cboShopping.Text);
+                // Process any applicable offers
+                ProcessOffers(item);
+                // Add to basket
+                AddScannedItem(item);
                 // Set the total of all items scanned
                 SetBasketTotal();
             }
@@ -59,15 +63,49 @@ namespace CapGeminiTechTest
             txtTotal.Text = "0.00";
         }
 
-        private void ScanItem(string itemName)
+        private BasketItem ScanItem(string itemName)
         {
             BasketItem item = new BasketItem(itemName);
+            return item;
+        }
+
+        private void AddScannedItem(BasketItem item)
+        {
             ItemsInBasket.Add(item);
+        }
+
+        private void ProcessOffers(BasketItem item)
+        {
+            IEnumerable<BasketItem> offerItems = ItemsInBasket.Where(i => i.ItemName == item.ItemName);
+
+            switch (item.ItemName)
+            {
+                case "Apple":
+                    // Buy 1 get 1 free
+                    if (offerItems.Count() > 0)
+                    {
+                        if ((offerItems.Count() + 1) % 2 == 0)
+                        {
+                            item.ItemPrice = 0;
+                        }
+                    }
+                    break;
+
+                case "Orange":
+                    // 3 for 2
+                    if (offerItems.Count() > 0)
+                    {
+                        if ((offerItems.Count() + 1) % 3 == 0)
+                        {
+                            item.ItemPrice = 0;
+                        }
+                    }
+                    break;
+            }
         }
 
         private void SetBasketTotal()
         {
-            //IEnumerable<double> prices = ItemsInBasket.Select(p => p.ItemPrice);
             txtTotal.Text = ItemsInBasket.Select(p => p.ItemPrice).Sum().ToString("F");
         }
     }
